@@ -1,0 +1,17 @@
+<h1>{{.PageTitle}}</h1>
+<ul>
+    <table>
+        {{range .Words}}
+
+        <tr><td>{{.Name}}</td></tr>
+
+        {{ range .Word }}
+
+        <tr><td></td><td>{{.}}</td></tr>
+
+        {{end}}
+
+        {{end}}
+
+    </table>
+</ul>

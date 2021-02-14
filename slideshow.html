@@ -1,0 +1,68 @@
+<html>
+<head><title>Flashcards!</title></head>
+
+<body>
+
+{{ range .Flashcards }}
+<div class="flashcardSet">{{.PageTitle}}</div>
+<div class="cards">
+    {{range .Cards}}
+
+    {{.Name}}
+
+    {{ range .Word }}
+    <div class="card">
+        {{.}}
+    </div>
+    {{end}}
+
+    {{end}}
+
+    </table>
+</div>
+{{ end }}
+<script>
+
+    var flashcardSet = 0;
+    var cards = 0;
+    var card = 0;
+
+    showFlashcardSet(flashcardSet, cards, card);
+
+    function plusSet() { showFlashcardSet(flashcardSet += 1, cards, card); }
+
+    function minusSet() { showFlashcardSet(flashcardSet -= 1, cards, card); }
+
+    function plusCards() { showFlashcardSet(flashcardSet, cards += 1, card); }
+
+    function minusCards() { showFlashcardSet(flashcardSet, cards -= 1, card); }
+
+    function plusCard() { showFlashcardSet(flashcardSet, cards, card += 1); }
+
+    function minusCard() { showFlashcardSet(flashcardSet, cards, card -= 1); }
+
+    function showFlashcardSet(flashcardSetIndex, cardsIndex, cardIndex) {
+
+        var fcs = document.getElementsByClassName("flashcardSet");
+        var cs = document.getElementsByClassName("cards");
+        var c = document.getElementsByClassName("card");
+
+        let i;
+        for (i = 0; i < fcs.length; i++) {
+            fcs[i].style.display = "none";
+        }
+        for (i = 0; i < cs.length; i++) {
+            cs[i].style.display = "none";
+        }
+        for (i = 0; i < c.length; i++) {
+            c[i].style.display = "none";
+        }
+
+        fcs[flashcardSetIndex].style.display = "block";
+        cs[cardsIndex].style.display = "block";
+        c[cardIndex].style.display = "block";
+
+    }
+</script>
+</body>
+</html>

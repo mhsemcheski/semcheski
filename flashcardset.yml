@@ -1,0 +1,68 @@
+flashcards:
+  - pagetitle: LE Card
+    cards:
+      - name: vcle
+        word:
+          - bridle
+          - cable
+          - able
+          - cradle
+          - rifle
+          - table
+          - bugle
+      - name: vccle
+        word:
+          - jungle
+          - scramble
+          - handle
+          - tremble
+          - sample
+          - single
+          - muscle
+      - name: vccle2
+        word:
+          - rattle
+          - bottle
+          - middle
+          - paddle
+          - battle
+          - scribble
+          - settle
+  - pagetitle: L Card
+    cards:
+      - name: le
+        word:
+          - angle
+          - struggle
+          - saddle
+          - couple
+          - needle
+          - bundle
+      - name: el
+        word:
+          - cancel
+          - level
+          - vowel
+          - novel
+          - angel
+          - jewel
+      - name: il
+        word:
+          - council
+          - stencil
+          - evil
+          - pupil
+          - fossil
+          - April
+      - name: al
+        word:
+          - pedal
+          - total
+          - metal
+          - local
+          - journal
+          - signal
+      - name: oddball
+        word:
+          - special
+          - fragile
